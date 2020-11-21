@@ -10,7 +10,7 @@ export interface OpenAPISpec {
   tags?: OpenAPITag[];
   externalDocs?: OpenAPIExternalDocumentation;
   'x-webhooks'?: OpenAPIPaths;
-  'jsonrpc'?: OpenAPIPaths;
+  'x-jsonrpc'?: OpenAPIPaths;
 }
 
 export interface OpenAPIInfo {
