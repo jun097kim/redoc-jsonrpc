@@ -104,7 +104,7 @@ export class OperationMenuItemContent extends React.Component<OperationMenuItemC
     if (item.isWebhook) {
       return <OperationBadge type="hook">{l('webhook')}</OperationBadge>
     } else if (item.isJsonRpc) {
-      return <OperationBadge type="rpc">{l('jsonrpc')}</OperationBadge>;
+      return <OperationBadge type="jsonrpc">{l('jsonrpc')}</OperationBadge>;
     } else {
       return <OperationBadge type={item.httpVerb}>{shortenHTTPVerb(item.httpVerb)}</OperationBadge>
     }
