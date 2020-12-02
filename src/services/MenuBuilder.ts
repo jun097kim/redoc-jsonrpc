@@ -226,8 +226,8 @@ export class MenuBuilder {
     if (spec['x-webhooks']) {
       getTags(spec['x-webhooks'], true);
     }
-    if (spec['jsonrpc']) {
-      getTags(spec['jsonrpc'], false, true);
+    if (spec['x-jsonrpc']) {
+      getTags(spec['x-jsonrpc'], false, true);
     }
 
     function getTags(paths: OpenAPIPaths, isWebhook?: boolean, isJsonRpc?: boolean) {
